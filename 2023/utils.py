@@ -30,6 +30,22 @@ def test_puzzle(test_data, test_answer):
 
 # Public Functions
 
+def double(number, n):
+    """Double a number n number of times.
+
+    Args:
+        number (int | float): The number to double.
+        n (int): The number of times to double the number.
+
+    Returns:
+        int | float
+    """
+    _multiplier = 1
+    for i in range(n):
+        _multiplier *= 2
+    return number * _multiplier
+
+
 def read_doc(input_path):
     """Read the document at the given path.
     
